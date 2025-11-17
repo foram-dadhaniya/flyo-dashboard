@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <style>
+  .spin-grow{
+  display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -.125em;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: .75s 
+linear infinite spinner-grow;
+    animation: .75s 
+linear infinite spinner-grow;
+  }
+  @keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+	
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="spin-grow"></div>
+
+</body>
+</html>
